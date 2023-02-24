@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    width: 75%;
+    flex-wrap:wrap;
+    gap:2rem;
+    margin: 2rem auto;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 65%;
+    gap: 2rem
+}
+
+.color{
+    padding: 2rem 1.5rem;
+    flex: 1;
+}
+
+.color > div {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1rem;
+}
+
+.color>div>div{
+    background-color: white;
+    padding: 1rem 1.5rem;
+    flex-basis: 40%;
+}
+
+#green{
+    background-color: aquamarine;
+    flex-basis: 100%;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#red{
+    background-color: crimson;
+}
+#blue{
+    background-color: aqua;
+}
+
+#orange{
+    background-color: orange;
+    flex-basis: 100%;
+}
+

@@ -1,0 +1,44 @@
+#clr{
+    height: 70px;
+    width: 150px;
+    background-color: rgba(255, 99, 71, 0.3);
+    background-color: #6b8e37;
+    background-color: hsla(100, 90%, 50%, 0.2);
+    margin: 40px 50px 10px 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    overflow:visible;
+    overflow:hidden;
+    overflow:auto;
+}
+
+#bird1{
+   height:150px;
+   width:200px; 
+   float: left;
+}
+
+#bgr{
+    margin-top: 20px;
+    height: 200px;
+    width: 500px;
+    background: url("image/bird.jpg") no-repeat scroll ;
+   
+}
+
+#brdr {
+    position:sticky;
+    top:0px;
+    width: 300px;
+    margin:auto;
+    border-style: dotted;
+    border-style: dotted solid double dashed;
+    border-width: 4px;
+    border-color: chartreuse blue;
+    border: 5px solid red;
+    
+}
+#inrdiv{
+    text-align: center;
+}

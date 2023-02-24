@@ -1,0 +1,33 @@
+.container{
+    display:flex;
+    background-color: brown;
+    flex-wrap: wrap;
+   
+}
+
+.container > div{
+    background-color: burlywood;
+    margin: 10px;
+    padding: 20px;
+   
+}
+
+#one{
+    order: 3;
+    
+}
+#two{
+    order:5;
+    flex-basis: 100px;
+}
+#three{
+    order:1;
+  
+}
+#four{
+    order:2;
+}
+#five{
+    order:4;
+    flex-shrink:3;
+}

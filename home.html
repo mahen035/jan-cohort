@@ -5,8 +5,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    
+    <link rel="icon" type = "image/x-icon" href="image/favicon.ico"/>
 </head>
 <body>
     <p>My Home page</p>
+    <p>사랑해요</p>
+    <img src="/image/bird.jpg" alt = "No image"><br>
+    <a href="jobs/">go to jobs section</a>
+
+    <hr>
+    <table border="1">
+        <thead>Life &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expectancy By Current Age  
+            5 &gt; 4      
+        </thead>
+        <tr>
+            <th colspan="2">65</th>
+            <th colspan="2">40</th>
+            <th colspan="2">20</th>
+        </tr>
+        <tr>
+            <th>Men</th>
+            <th>Women</th>
+            <th>Men</th>
+            <th>Women</th>
+            <th>Men</th>
+            <th>Women</th>
+
+        </tr>
+        <tr>
+            <td>82</td>
+            <td>85</td>
+            <td>78</td>
+            <td>82</td>
+            <td>77</td>
+            <td>81</td>
+
+        </tr>
+    </table>
+    <hr>
+    <ul type="square">
+        <li> &#129409;David</li>
+        <li> &#127799;Mark</li>
+        <li>Paula</li>
+    </ul>
+    <hr>
+    <ol type="1">
+        <li>Tea</li>
+            <ol type="a">
+                <li>Ice Tea</li>
+                <li>Hot Tea</li>
+            </ol>
+        <li>Coffee</li>
+        <li>Milk</li>
+    </ol>
+    <hr>
+    <dl>
+        <dt>Milk</dt>
+        <dd>-White in color</dd>
+        <dt>Coffee</dt>
+        <dd>-Black or brown </dd>
+    </dl>
+    <hr>
+    
+    <fieldset>
+        <legend>Personal Information</legend>
+        <form action="mailto:someone@abc.com" enctype="text/plain">
+            <table>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" id= "txt1" name="username" placeholder="Enter username" required></td>
+                </tr>
+             
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="e1" name="email" placeholder="Enter Your Email" oninput="result.value=txt1.value + e1.value"></td>
+                    
+                </tr>
+                           
+                <tr>
+                   <td> <label for="password">Password:</label></td>
+                    <td> <input type="password" name="password" placeholder="Enter password"></td> 
+                </tr>
+                <tr>
+                    <td> <label for="dob">Date of Birth:</label></td>
+                   <td><input type="date" name ="dob" max="2010-01-01" min="1980-01-01"></td> 
+                </tr>
+                <tr>
+                    <td> <label for="pic">Profile Picture</label></td>
+                   <td><input type="file" name ="pic" ></td> 
+                </tr>
+
+                <tr>
+                    <td> <label for="address">Address:</label></td>
+                   <td>
+                        <textarea rows="4" cols="20">
+
+                        </textarea>
+                   </td> 
+                </tr>
+                            
+            </table> <br>
+
+            <input type="range" id= "a" value="40" min="20" max="100">
+            +<input type="number"  id = "num1" value ="60">
+            =<output name="result" ></output>
+        <br>
+
+            <select name="cities" id="" multiple>
+                <option value="Chicago">Chicago</option>
+                <option value="dallas">Dallas</option>
+                <option value="Milwaukee" selected>Milwaukee</option>
+                <option value="bangalore">Bangalore</option>
+            </select><br>
+
+            Downloading......<progress id ="file1" value="45" max="100">45%</progress><br>
+
+          
+            <input list="cities" name="city" id="city">
+
+            <datalist id="cities">
+                <option value="Chicago"></option>
+                <option value="dallas"></option>
+                <option value="Milwaukee" ></option>
+                <option value="bangalore"></option>
+            </datalist> <br>
+
+            <input type="radio" name="gender" id="r1" value="Male">Male<br>
+            <input type="radio" name="gender" id="r2" value="Female" checked>Female<br>
+            <input type="radio" name="gender" id="r3" value="Others">Others<br>
+            <input type="submit" value="Register"><br><br>
+            
+        </form>
+    </fieldset>
+    
 </body>
 </html>
