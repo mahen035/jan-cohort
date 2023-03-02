@@ -1,75 +1,52 @@
-.main{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left:0;
-    right:0;
-    margin: auto;
-    width:80%;
-    height: 80%;
-    display: grid;
-    grid-template-areas: 'input input input plus'
-                         'one two three minus'
-                         'four five six multiply'
-                         'seven eight nine divide'
-                         'zero equals equals clear';
-    grid-gap: 10px;
-    background-color: rgb(122, 185, 231);
-    padding:5em;
-    margin: 10%;
-    border-radius: 40px;;
-}
-#inputCal{
-    grid-area: input;
-    border-radius: 10px;
-    background-color: white;
-}
-
-#one{
-    grid-area: one;
-}
-#two{
-    grid-area: two;
-}
-#three{
-    grid-area: three;
-}
-#four{
-    grid-area: four;
-}
-#five{
-    grid-area: five;
-}
-#six{
-    grid-area: six;
-}
-#seven{
-    grid-area: seven;
-}
-#eight{
-    grid-area: eight;
-}
-#nine{
-    grid-area: nine;
-}
-#ten{
-    grid-area: ten;
-}
-#plus{
-    grid-area: plus;
-}
-#minus{
-    grid-area: minus;
-}
-#divide{
-    grid-area: divide;
-}
-#multiply{
-    grid-area: multiply;
-}
-#equals{
-    grid-area: equals;
-}
-#clear{
-    grid-area: clear;
-}
+*{
+    text-align: center;
+ }
+ #main_div{
+     background-image: url(images/bg.png);
+     width: 60%;
+     height: 90%;
+     padding: 10%;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     margin-top: 10%;
+     margin-left: 20%;
+     /* margin: auto; */
+     border: 2px solid black;
+ }
+ #first_div{
+     padding: 1em;
+ }
+ label{
+     font-size: 32px;
+     color: rgb(0, 17, 255);
+     padding-bottom: 1em;
+     font-weight: bold;
+ }
+ #inputNumber{
+     padding:1em;
+     border: 2px solid black;
+     border-radius: 30px;
+ }
+ #checkButton{
+     padding-top: 1em;
+     padding-bottom: 1em;
+     padding-left: 3em;
+     padding-right: 3em;
+     font-weight: bold;
+ }
+ #message{
+     padding-top: 1em;
+     padding-bottom: 1em;
+     font-weight: bold;
+     font-size: 32px;
+ }
+ #startOverBtn{
+     padding-top: 1em;
+     padding-bottom: 1em;
+     padding-left: 3em;
+     padding-right: 3em;
+     font-weight: bold;
+ }
+ 
