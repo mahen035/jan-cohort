@@ -1,58 +1,69 @@
-*{
-    box-sizing: border-box;
+.maincontainer{
+    display:grid;
+    
+
 }
 
-.container{
-    display: flex;
-    width: 75%;
-    flex-wrap:wrap;
-    gap:2rem;
-    margin: 2rem auto;
-}
-
-.wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 65%;
-    gap: 2rem
-}
-
-.color{
-    padding: 2rem 1.5rem;
-    flex: 1;
-}
-
-.color > div {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 1rem;
-}
-
-.color>div>div{
-    background-color: white;
-    padding: 1rem 1.5rem;
-    flex-basis: 40%;
-}
-
-#green{
+.one{
+   grid-column: 1/4;
+grid-row:1;
     background-color: aquamarine;
-    flex-basis: 100%;
-}
+    margin:2px;
 
-#yellow{
+}
+.two{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end:3;
     background-color: yellow;
+    height:320px;
+    margin: 2px;   
+}
+.yellow{
+    display: grid;
+    padding:2px;
+    grid-gap:5px;
+    grid-template-columns: repeat(2,1fr);
+    margin:10px;
+}
+.yellow> div{
+    background-color: white;
+    margin:2px;
+    width:50px;
+    height:50px;
+    border:2px;
+    gap:10em;
+
+  
 }
 
-#red{
-    background-color: crimson;
+.three{
+  grid-column-start:2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+    background-color: red;
+    height:320px;
+    margin:2px;
+    
 }
-#blue{
-    background-color: aqua;
-}
+.four{
+  grid-column-start:1;
+  grid-column-end: 3;
+  grid-row-start: 3;
 
-#orange{
-    background-color: orange;
-    flex-basis: 100%;
+grid-row-end: 4;
+  background-color: orange;
+    
 }
+.five{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+   
+  background-color: blue;
 
+    margin:2px;
+}
