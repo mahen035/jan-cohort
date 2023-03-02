@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 <body>
-    <h1>JS Demo</h1>
+    <h1 id="head1">JavaScript Demo</h1>
+    <h1 id="subhead">Sub Header</h1>
+    <p onclick="test()">Click on this paragraph to see the magic</p>
+    <p>You clicked: <span id="result"></span></p>
+
+    <input type="text" id="txt1" placeholder="Enter Your Name"><br><br>
+    <button onclick="greet()">Greet</button><br><br>
+    <div id="greetVal"></div>
+
+    <input type="number" id="num1" placeholder="Enter a number"><br><br>
+    <button onclick="addTen()">Add 10</button><br><br>
+    <div id="newNum"></div>
+
+    <input type="text" id="calc" placeholder="Enter an expression to calculate">
+    = &nbsp;&nbsp;
+    <input type="text" id="res1" placeholder="Result"><br><br>
+    <button onclick="calculate()">Calculate</button><br><br>
+    <hr>
+    <h2>Prompt Demo</h2>
+    <button onclick="myPrompt()">Invoke Prompt</button><br><br>
+    <div id="res2"></div><br><br>
+    <hr>
+    <h2>Confirm Demo</h2>
+    <button onclick="myConfirm()">Invoke Confirm</button><br><br>
+    <div id="res3">Example</div><br><br>
+    <hr>
+    <input type="number" id="lucky" placeholder="Guess My Lucky Number"><br><br>
+    <button onclick="guess()">Check</button><br><br>
+    <div id="msg"></div>
+    <script src="main.js"></script>
 </body>
 </html>
